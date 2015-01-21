@@ -18,6 +18,8 @@ namespace WebApplication1
         protected void btnOK_Click(object sender, EventArgs e)
         {
             FormsAuthentication.RedirectFromLoginPage(txtName.Text, true);
+
+            Session["LoginTime"] = DateTime.Now.ToString();
         }
     }
 }

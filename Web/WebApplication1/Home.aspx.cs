@@ -12,7 +12,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Response.Write(Session["LoginTime"]);
         }
 
         protected void btnLogout_Click(object sender, EventArgs e)
